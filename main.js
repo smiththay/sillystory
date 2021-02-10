@@ -22,10 +22,10 @@ function result() {
     let yItem = randomValueFromArray(insertY);
     let zItem = randomValueFromArray(insertZ);
 
-    newStory = newStory.replace(':insertX:', xItem);
-    newStory = newStory.replace(':insertY:', yItem);
-    newStory = newStory.replace(':insertZ:', zItem);
-    newStory = newStory.replace(':insertX:', xItem);
+    newStory = newStory.replace(':insertx:', xItem);
+    newStory = newStory.replace(':inserty:', yItem);
+    newStory = newStory.replace(':insertz:', zItem);
+    newStory = newStory.replace(':insertx:', xItem);
     
 
     if(customName.value !== '') {
@@ -35,12 +35,12 @@ function result() {
     }
 
     if(document.getElementById("uk").checked) {
-    const weight = Math.round(300/14) + 'stone';
-    const temperature =  Math.round(94 - 32) * 5 / 9) + 'cetigrade';
+    let weight = Math.round(300/14) + 'stone';
+    let temperature =  Math.round((94 - 32) * 5 / 9) + 'cetigrade';
+    
+    newStory = newStory.replace('94 fahrenheit',temperature);
+    newStory = newStory.replace('300 pounds',weight);
     }
-    newStory = newStory.replace('94 fahrenheit', temperature);
-    newStory = newStory.replace('300 pounds', weight);
-
 
   story.textContent = newStory;
   story.style.visibility = 'visible';
