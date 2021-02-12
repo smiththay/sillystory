@@ -8,8 +8,8 @@ function randomValueFromArray(array){
 }
 
 let storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
-let insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
-let insertY = ['the soup kitchen', 'Disneylsnd', 'the White House'];
+let insertX = ['Justin the Destroyer', 'Ian D-O-Double-G', 'Elon Musk'];
+let insertY = ['the Awesome Inc boot camp', 'Kings Island', 'your moms house'];
 let insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
 
 

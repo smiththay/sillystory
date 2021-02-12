@@ -8,10 +8,25 @@
     <title>Silly story generator</title>
 
     <style>
-
+      * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+        
     body {
       font-family: helvetica, sans-serif;
-      width: 350px;
+      text-align: center;
+      max-width: 1000px;
+      margin: auto;
     }
 
     label {
@@ -33,12 +48,14 @@
       padding: 10px;
       visibility: hidden;
     }
-
+  
     </style>
   </head>
 
   <body>
-    <img src="https://github.com/smiththay/sillystory/blob/dev/img/Silly.jpg" alt="banner">
+    <div class="content">
+    <div class="imgbox">
+    <img class="center-fit" src="img/Silly.jpg">
     <div>
       <label for="customname">Enter custom name:</label>
       <input id="customname" type="text" placeholder="">
@@ -52,8 +69,9 @@
     </div>
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
     <p class="story"></p>
-    
+
   
    <script src="main.js" defer></script> 
+  
   </body>
 </html>
